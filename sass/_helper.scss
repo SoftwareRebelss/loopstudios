@@ -1,0 +1,46 @@
+@import "mixins";
+//helper classes
+.flex{
+    display: flex;
+
+    &-jc-sb{
+    justify-content: space-between;
+    }
+    &-jc-c{
+    justify-content: center;
+    }
+    &-ai-c{
+        align-items: center;
+    }
+}
+
+.spacing{
+
+    padding: 2.1875rem;
+    @include breakpoint-up(large) {
+      padding: 6.25rem;
+    }
+
+}
+.text__padding{
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+}
+.head__text{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size:2.1875rem;
+    text-transform: uppercase;
+}
+// Visibility
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+  }
+  
+  .hide-for-desktop {
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }

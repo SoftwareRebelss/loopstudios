@@ -1,0 +1,237 @@
+@import "mixins";
+@include breakpoint-up(large) {
+    div.creators.spacing.flex.flex-jc-sb.flex-ai-c{
+        margin-top: -9.375rem;
+    }
+    div.grid__container.spacing{
+        margin-top: -9.375rem;
+    }
+    div.grid__container.second.spacing{
+        margin-top: -220px;
+    }
+   
+ }
+
+
+.creators{
+    text-align: center;
+    
+}
+.grid__container{
+
+    @include breakpoint-up(large) {
+     display: flex;
+     width:100%;
+     flex-wrap: wrap;
+     margin: 0 auto;
+     
+  
+           
+    }
+     
+    .grid__item{
+        margin-bottom:36px;
+        color: white;
+
+        @include breakpoint-up(large) {
+           margin-right: 15px;
+           cursor: pointer;
+           position: relative;
+          
+         
+     &::before{
+        content: "";
+      
+        position: absolute;
+        height:100%;
+        background:rgba(255, 255, 255, 0.596);
+        width:100%;
+        right: 0;
+        left: 0;
+      
+        text-align: center;
+        
+        opacity: 0;
+        transition: opacity 200ms ease-in;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    &:hover{
+        color: black;
+        &::before{
+            opacity: 1;
+            
+
+        }
+       }
+
+
+        }
+            
+        
+    }
+    .grid{
+      padding:3.125rem;
+      @include breakpoint-up(large) {
+        margin-top: 12.5rem;
+     }
+    }
+    .item-one{
+        background: url("/images/mobile/image-deep-earth.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+        height:11.4375rem;
+
+        @include breakpoint-up(large) {
+        background: url("/images/desktop/image-deep-earth.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+        height:25rem;
+        width:9.375rem;
+        flex:0.5;
+        order: 1;
+        
+                  
+        }
+      
+    }
+    .item-two{
+        background: url("/images/mobile/image-night-arcade.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+        height:11.4375rem;
+
+           @include breakpoint-up(large) {
+            background: url("/images/desktop/image-night-arcade.jpg");
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center center;
+            height:25rem;
+            width:9.375rem;
+            flex:0.5;
+            order: 2;
+        }
+    }
+    .item-three{
+        background: url("/images/mobile/image-soccer-team.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+        height:11.4375rem;
+
+        @include breakpoint-up(large) {
+            background: url("/images/desktop/image-soccer-team.jpg");
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center center;
+            height:25rem;
+            width:9.375rem;
+            flex:0.5;
+            order: 3;
+        }
+    }
+    .item-foth{
+        background: url("/images/mobile/image-grid.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+        height:11.4375rem;
+
+        @include breakpoint-up(large) {
+            background: url("/images/desktop/image-grid.jpg");
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center center;
+            height:25rem;
+            width:9.375rem;
+            flex:0.5;
+            order: 4;
+        }
+    }
+    .item-fith{
+        background: url("/images/mobile/image-from-above.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+        height:11.4375rem;
+
+        @include breakpoint-up(large) {
+            background: url("/images/desktop/image-from-above.jpg");
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center center;
+            height:25rem;
+            width:9.375rem;
+            flex:0.5;
+            order: 5;
+        }
+    }
+    .item-sith{
+        background: url("/images/mobile/image-pocket-borealis.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+        height:11.4375rem;
+        
+        @include breakpoint-up(large) {
+            background: url("/images/desktop/image-pocket-borealis.jpg");
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center center;
+            height:25rem;
+            width:9.375rem;
+            flex:0.5;
+            order: 6;
+        }
+    }
+    .item-seveth{
+        background: url("/images/mobile/image-curiosity.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+        height:11.4375rem;
+
+        @include breakpoint-up(large) {
+            background: url("/images/desktop/image-curiosity.jpg");
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center center;
+            height:25rem;
+            width:9.375rem;
+            flex:0.5;
+            order: 7;
+        }
+    }
+    .item-eight{
+        background: url("/images/mobile/image-fisheye.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center center;
+        height:11.4375rem;
+        
+        @include breakpoint-up(large) {
+            background: url("/images/desktop/image-fisheye.jpg");
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center center;
+            height:25rem;
+            width:9.375rem;
+            flex:0.5;
+            order: 8;
+        }
+    }
+  
+}
+.second{
+    margin-top: -6.25rem;
+    @include breakpoint-up(large) {
+        margin-top: -13.75rem;
+    }
+}
+
